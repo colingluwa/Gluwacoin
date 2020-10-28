@@ -31,9 +31,9 @@ contract Owned
 {
     address internal _owner;
 
-    constructor() public
+    constructor(address owner) public
     {
-        _owner = msg.sender;
+        _owner = owner;
     }
 
     modifier onlyOwner 
